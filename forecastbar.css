@@ -1,0 +1,56 @@
+.day-card{
+    display: flex;
+    flex-direction: column;
+    height: 160px;
+    width: 140px;
+    background-color: rgba(255, 255, 255, 0.397);
+    border-width: 5px black;
+    margin-top: 10px;
+    border-radius: 15px;
+    
+}
+.date{
+
+    width: 100%;
+    height: 5%;
+    font-size: 10px;
+    padding-left: 10px;
+    padding-top: 2px;
+    /* background-color: cadetblue; */
+}
+.forecast-icon-container{
+   width: 100%;
+   height: 35%;
+   align-items: center;
+   justify-content: center;
+   display: flex;
+   /* background-color: black; */
+}
+.forecast-descriptioncontainer{
+    width: 100%;
+    height: 20%;
+    font-size: 14px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    /* background-color: rgb(172, 28, 28); */
+}
+.forecast-tempcontainer{
+    width: 100%;
+    height: 35%;
+    font-size: 30px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    /* background-color: rgb(34, 222, 125); */
+}
+
+.precipitaion{
+    width: 100%;
+    height: 5%;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    font-size: 12px;
+    padding-bottom: 6px;
+}

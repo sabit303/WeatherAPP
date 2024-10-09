@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+
+<head>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="forecastbar.css">
+    <link rel="stylesheet" href="searchbar.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    </head>
+<body>
+    <div class="background"></div>
+    <div class="search-container">
+        <input type="text" placeholder="Enter a city..." class="search-input">
+        <button id="search-button">Search</button>
+    </div>
+   
+    <div id="current">
+        <div id="location" style="border-width: 5px;  border-radius: 15px;">
+            <p><img src="image.png" id="location-icon" alt="">Currently at <span id="city">Loading...</span></p>
+            
+        </div>
+        <div id="temp-icon" >
+            <div id="icon">
+                <div id="image-container" >
+                    <img id="image"  alt="image">
+                </div>
+                <div id="description-container">
+                    <p style="margin: none;" id="description"></p>
+                </div>
+            </div>
+            <div id="temp">
+                <p><span id="tempNum">Loading...</span><sup>&deg</sup>C</p>
+
+            </div>
+        </div>
+    <div id="details">    
+        <div >
+            <p id="humidity">Humidity</p>
+        </div>
+        <div>
+            <p id="feels">Feels Like</p>
+        </div>
+        <div>
+            <p id="wind">Wind</p>
+        </div>
+        <div>
+            <p id="pressure">Pressure</p>
+        </div>
+    </div>
+    </div>
+    <div id="forecast">
+        <div class="day-card">
+            <div class="date">Tomorrow:</div>
+            <div class="forecast-icon-container"><img class="foricon"  src="" alt="image"></div>
+            <div class="forecast-descriptioncontainer"></div>
+            <div class="forecast-tempcontainer"></div>
+            <div class="precipitaion"></div>
+        </div>
+
+
+        <div class="day-card">
+            <div class="date"><p></p></div>
+            <div class="forecast-icon-container"><img class="foricon"  src="" alt="image"></div>
+            <div class="forecast-descriptioncontainer"></div>
+            <div class="forecast-tempcontainer"></div>
+            <div class="precipitaion"></div>
+        </div>
+
+        <div class="day-card">
+            <div class="date"><p></p></div>
+            <div class="forecast-icon-container"><img class="foricon"  src="" alt="image"></div>
+            <div class="forecast-descriptioncontainer"></div>
+            <div class="forecast-tempcontainer"></div>
+            <div class="precipitaion"></div>
+        </div>
+
+        <div class="day-card">
+            <div class="date"><p></p></div>
+           <div class="forecast-icon-container"><img class="foricon"  src="" alt="image"></div>
+            <div class="forecast-descriptioncontainer"></div>
+            <div class="forecast-tempcontainer"></div>
+            <div class="precipitaion"></div>
+        </div>
+
+        <div class="day-card">
+            <div class="date"><p></p></div>
+            <div class="forecast-icon-container"><img class="foricon" src="" alt="image"></div>
+            <div class="forecast-descriptioncontainer"></div>
+            <div class="forecast-tempcontainer"></div>
+            <div class="precipitaion"></div>
+        </div>
+
+    </div>
+    <script type="module" src="script.js"></script>
+    <script src="getSearchLocation.js"></script>
+</body>

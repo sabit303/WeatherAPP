@@ -1,0 +1,131 @@
+body {
+    margin: 0; 
+    overflow: hidden; 
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-style: italic;
+}
+
+.background {
+    background-image: url("background.avif");
+    background-size: cover; 
+    background-position: center; 
+    position: fixed; 
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    filter: blur(6px); 
+    z-index: -1; 
+    
+}
+
+#current{
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    z-index: 1;
+    margin: 100px auto;
+    background : linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+    backdrop-filter: blur(20px);
+    border: 0.5px solid; 
+    width: 500px;
+    height: 280px;
+    vertical-align: middle;
+    border-radius: 10px;
+    flex-direction: column;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-bottom: 50px;
+}
+#location{
+    width: 50%;
+    height: 20%;
+}
+#text{
+    margin-bottom: 2px;
+}
+#location-icon{
+    height: 100%;
+    width: 10%;
+}
+
+
+#temp-icon{
+    width: 50%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+
+   
+}
+
+#icon{
+    display: flex;
+    flex-direction: row;
+    height: 40%;
+    width: 100%;
+    /* background-color: rgba(23, 167, 167, 0.566); */
+}
+
+/* #icon img{
+    height: 100%;
+    width: 50%;
+    border-width: 7px;
+    border-color: black;
+} */
+#image-container{ 
+    height: 100%;
+    width: 40%;
+}
+
+#image{
+    height: 100%;
+    width: 100%;
+}
+#icon p{
+    width: 50%;
+    height: 100%;
+    font-size: 20px;
+
+}
+#description-container{
+   text-align: center;
+}
+#tempNum{
+    height: 60%;
+    font-size: 70px;
+    font-weight: bold;
+  
+    
+}
+#temp p{
+    margin: 0;
+    margin-top: 10px;
+    text-align: center;
+    font-size: 20px;
+}
+
+#forecast{
+    display: flex;
+    flex-direction: row;
+    background-color: rgba(0, 255, 255, 0.521);
+    /* margin-left: 320px;
+    margin-right: 320px;  */
+    width: 900px;
+    height: 180px;
+    justify-content: space-around;
+    border-radius: 15px;
+   
+    margin: 0 auto;
+
+
+}
+.day-card{
+    height: 160px;
+    width: 140px;
+    background-color: rgba(255, 255, 255, 0.397);
+    border-width: 5px black;
+    margin-top: 10px;
+    border-radius: 15px;
+}

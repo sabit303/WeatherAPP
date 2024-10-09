@@ -24,8 +24,9 @@ async function LoadCurrentWeather() {
         document.getElementById("wind").innerHTML = "Wind: " + Math.round(response.wind.speed) +" km/h";
         document.getElementById("pressure").innerHTML = "Pressure: " + Math.round(response.main.pressure) +" hPa";
     }
-   fetchCurrentWeather();
+   
     LoadCurrentForecast();
+    fetchCurrentWeather();
 }
 
 window.onload = LoadCurrentWeather;
@@ -52,8 +53,9 @@ async function LoadSearchWeather() {
        document.getElementById("wind").innerHTML = "Wind: " + Math.round(response.wind.speed) +" km/h";
        document.getElementById("pressure").innerHTML = "Pressure: " + Math.round(response.main.pressure) +" hPa";
    }
-  fetchCurrentWeather();
+  
   LoadForecast();
+  fetchCurrentWeather();
 }
 
 

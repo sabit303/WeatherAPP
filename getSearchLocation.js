@@ -4,7 +4,7 @@ let searchInput;
 export async function getSearchLocation() {
      searchInput = document.getElementsByClassName("search-input")[0].value;
    
-    const getCoordinates = await fetch(`http://api.openweathermap.org/geo/1.0/direct?q=${searchInput}&limit=1&appid=7d49d2d2a28c800aff55c4ee6665bc1e`);
+    const getCoordinates = await fetch(`https://api.openweathermap.org/geo/1.0/direct?q=${searchInput}&limit=1&appid=7d49d2d2a28c800aff55c4ee6665bc1e`);
     
     const response = await getCoordinates.json();
     if (response.length === 0) {

@@ -4,7 +4,7 @@ export async function LoadForecast() {
     let cityname = document.getElementsByClassName("search-input")[0].value;
 
     const forecastData = await fetch(
-        `https://api.weatherapi.com/v1/forecast.json?key=aacefc0ee805401dbe9162005240810&q=${cityname}&days=6&aqi=no&alerts=no`
+        `https://api.weatherapi.com/v1/forecast.json?key=68d44c7e96764e49907175618242610&q=${cityname}&days=6&aqi=no&alerts=no`
     );
 
     const response = await forecastData.json();
@@ -28,7 +28,7 @@ export async function LoadCurrentForecast() {
     let { latitude, longitude } = getCoordinates();
 
     const forecastData = await fetch(
-        `https://api.weatherapi.com/v1/forecast.json?key=aacefc0ee805401dbe9162005240810&q=${latitude},${longitude}&days=6&aqi=no&alerts=no`
+        `https://api.weatherapi.com/v1/forecast.json?key=68d44c7e96764e49907175618242610&q=${latitude},${longitude}&days=6&aqi=no&alerts=no`
     );
 
     const response = await forecastData.json();
